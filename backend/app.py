@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS
+CORS(app, resources={r"/*": {"origins": ["https://dtxr-mini-project.vercel.app/"]}})  # Enable CORS
 
 # Initial state
 light_state = {
