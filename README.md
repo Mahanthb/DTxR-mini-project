@@ -54,7 +54,7 @@ Installation
 
 ### Setup
 
-1.  bashCopyDownloadgit clone https://github.com/your-username/smart-light-digital-twin.gitcd smart-light-digital-twin
+1.  bashCopyDownloadgit clone https://github.com/Mahanthb/DTxR-mini-project.gitcd smart-light-digital-twin
     
 2.  bashCopyDownloadcd backendpip install -r requirements.txtpython app.py
     
@@ -66,13 +66,6 @@ Installation
         
     *   Backend API: [http://localhost:5000](http://localhost:5000/)
         
-
-Project Structure
------------------
-
-CopyDownload
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   smart-light-digital-twin/  ├── backend/  │   ├── app.py                # Flask server  │   └── requirements.txt      # Python dependencies  ├── frontend/  │   ├── public/  │   ├── src/  │   │   ├── components/       # React components  │   │   ├── App.js            # Main application  │   │   └── App.css           # Styles  │   ├── package.json  │   └── ...                   # Other React files  └── README.md   `
 
 Usage
 -----
