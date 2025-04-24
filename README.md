@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+Smart Light Digital Twin Project
+================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A 3D interactive digital twin of a smart light system with real-time monitoring, control, and energy analytics.
 
-## Available Scripts
+Features
+--------
 
-In the project directory, you can run:
+*   **3D Visualization** of a smart light in a virtual room environment
+    
+*   **Real-time Control** of light status and brightness
+    
+*   **Power Monitoring** with consumption analytics
+    
+*   **Weather-based Automation** that adjusts lighting based on conditions
+    
+*   **Historical Data Tracking** of usage patterns
+    
+*   **Cost Estimation** of electricity consumption
+    
 
-### `npm start`
+Technologies Used
+-----------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   React.js
+    
+*   Three.js (via @react-three/fiber)
+    
+*   Recharts for data visualization
+    
+*   Axios for API calls
+    
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   Flask (Python)
+    
+*   Flask-CORS for cross-origin support
+    
 
-### `npm run build`
+Installation
+------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*   Node.js (v14+)
+    
+*   Python (3.7+)
+    
+*   npm/yarn
+    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
 
-### `npm run eject`
+1.  bashCopyDownloadgit clone https://github.com/your-username/smart-light-digital-twin.gitcd smart-light-digital-twin
+    
+2.  bashCopyDownloadcd backendpip install -r requirements.txtpython app.py
+    
+3.  bashCopyDownloadcd frontendnpm installnpm start
+    
+4.  **Access the application**
+    
+    *   Frontend: [http://localhost:3000](http://localhost:3000/)
+        
+    *   Backend API: [http://localhost:5000](http://localhost:5000/)
+        
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Structure
+-----------------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CopyDownload
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   smart-light-digital-twin/  ├── backend/  │   ├── app.py                # Flask server  │   └── requirements.txt      # Python dependencies  ├── frontend/  │   ├── public/  │   ├── src/  │   │   ├── components/       # React components  │   │   ├── App.js            # Main application  │   │   └── App.css           # Styles  │   ├── package.json  │   └── ...                   # Other React files  └── README.md   `
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Usage
+-----
 
-## Learn More
+1.  **Manual Control**:
+    
+    *   Toggle the light ON/OFF using the buttons
+        
+    *   Adjust brightness using the slider
+        
+2.  **Auto Mode**:
+    
+    *   Enable Auto Mode to have the system automatically adjust lighting based on:
+        
+        *   Time of day
+            
+        *   Weather conditions (cloud cover, daylight)
+            
+        *   Temperature
+            
+3.  **Monitoring**:
+    
+    *   View real-time power consumption
+        
+    *   Analyze historical usage patterns
+        
+    *   See the relationship between brightness and power usage
+        
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API Documentation
+-----------------
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The backend provides a simple REST API:
 
-### Code Splitting
+*   GET /toggle-light - Get current light state
+    
+*   POST /toggle-light - Update light state
+    
+    *   Parameters:
+        
+        *   state: "ON" or "OFF"
+            
+        *   brightness: 0-100 (percentage)
+            
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributing
+------------
 
-### Analyzing the Bundle Size
+Contributions are welcome! Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1.  Fork the project
+    
+2.  Create your feature branch (git checkout -b feature/AmazingFeature)
+    
+3.  Commit your changes (git commit -m 'Add some AmazingFeature')
+    
+4.  Push to the branch (git push origin feature/AmazingFeature)
+    
+5.  Open a Pull Request
+    
 
-### Making a Progressive Web App
+License
+-------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Distributed under the MIT License. See LICENSE for more information.
 
-### Advanced Configuration
+Contact
+-------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Your Name - [mahanthkumarb@gmail.com](https://mailto:your.email@example.com/)
 
-### Deployment
+Project Link: [https://github.com/Mahanthb/DTxR-mini-project](https://github.com/your-username/smart-light-digital-twin)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Acknowledgements
+----------------
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   [React Three Fiber](https://github.com/pmndrs/react-three-fiber) for 3D rendering
+    
+*   [Recharts](https://recharts.org/) for data visualization
+    
+*   [Open-Meteo](https://open-meteo.com/) for weather data API
