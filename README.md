@@ -54,13 +54,21 @@ Installation
 
 ### Setup
 
-1.  bashCopyDownloadgit clone https://github.com/Mahanthb/DTxR-mini-project.gitcd smart-light-digital-twin
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mahanthb/DTxR-mini-project.git
+   cd smart-light-digital-twin
     
-2.  bashCopyDownloadcd backendpip install -r requirements.txtpython app.py
+2. ```bash
+   cd backendpip install -r requirements.txt
+   python app.py
     
-3.  bashCopyDownloadcd frontendnpm installnpm start
+4. ```bash
+   cd frontend
+   npm install
+   npm start
     
-4.  **Access the application**
+6.  **Access the application**
     
     *   Frontend: [http://localhost:3000](http://localhost:3000/)
         
