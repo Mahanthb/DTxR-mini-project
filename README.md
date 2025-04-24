@@ -60,7 +60,8 @@ Installation
    cd smart-light-digital-twin
     
 2. ```bash
-   cd backendpip install -r requirements.txt
+   cd backend
+   pip install -r requirements.txt
    python app.py
     
 4. ```bash
